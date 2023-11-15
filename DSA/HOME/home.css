@@ -20,7 +20,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     height: 60px;
-    background-color: black;
+    background-color: #0F2A3D;
 }
 
 .logo img {
@@ -55,23 +55,26 @@ header {
 }
 /* Style the hero section */
 .hero {
-    background-image: url('front\ bkg.jpg'); /* Set your background image here */
+    background-image: url('formal.jpg'); /* Set your background image here */
     background-size: cover;
-    color: white;
+    color: #ffa439;
     text-align: center;
     padding: 100px 0;
+    height: 270px;
+    
 }
 
 .hero-content {
-    margin-top: 40px;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: auto;
-    border-radius: 3px;
-    background-color: rgba(15, 19, 21, 0.313);
-    opacity: inherit;
-    box-shadow: #333;
+    font-family: system-ui;
+  float: left;
+  margin-left: 4%; /* Adjust the left margin as needed */
+  max-width: 550px;
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 3px;
+  background-color: #0F2A3D;
+  opacity: 0.9; /* Adjust opacity as needed */
 }
+
 
 .hero h1 {
     font-size: 36px;
@@ -87,32 +90,89 @@ header {
 .cta-button {
     margin-top: 20px;
     display: inline-block;
-    background-color: #f3e9b2;
-    color: #333;
+    background-color: #ffa439;
+    color: #fffdfd;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    margin-bottom:20px;
 }
 .cta-button:hover{
-    background-color:  rgba(15, 19, 21, 0.313);
+    background-color:#719ebd;
     transition: 0.1s;
 }
-/*  photos */
 
-/*text*/
-
-.text {
+.text{
+    font-size: 34PX;
     text-align: center;
-   
-  }
-  
+    color: #ffa439;
+}
 
+/*  testimonial*/
+.testimonial-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #0F2A3D;
+    
+  }
+
+  .testimonial {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+  }
+  .testimonial:hover {
+    box-shadow: 0 0 40px rgba(255, 164, 57, 0.8); /* Add a box shadow on hover */
+  }
+
+  /* Optional styling for better aesthetics */
+  .testimonial img {
+  
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .testimonial p {
+    font-style: italic;
+    color: #ffa439;
+  }
+
+/*carusel*/
+
+
+.swiper-container {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  /* Optional styling for better aesthetics */
+  .swiper-slide img {
+    max-width: 50%;
+    border-radius: 5px;
+  }
 /* Style the features section */
 .features {
     text-align: center;
     padding: 60px 0;
 }
+
+
+
 
 .feature {
     max-width: 300px;

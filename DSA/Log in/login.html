@@ -17,35 +17,43 @@
                 <li><a href="http://127.0.0.1:5500/HOME/home.html">Home</a></li>
                 <li><a href="#">Attendance</a></li>
                 <li><a href="https://www.facebook.com/groups/163081807048733">Contact</a></li>
-                <li><a href="http://127.0.0.1:5500/Log%20in/login.html">Log in</a></li>
+                <li><a href="http://192.168.1.97:5500/Log%20in/login.html">Log in</a></li>
                 <li><a href="#">View Event</a></li>
             </ul>
         </nav>
     </header>
     <div class="login-container">
-        <div class="form-logo">
-            <img src="logo-removebg-preview.png" alt="Logo">
-        </div>
         <form class="login-form">
-            <h2>Login</h2>
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-           
-            <button type="submit">Login</button>
-             <a href="http://127.0.0.1:5500/FillUp%20form/form.html" class="create">Create Acount</a>
-             <br><br><br><br><br><br>
-             <div class="icon">
-                <i class="fa-brands fa-facebook"></i>
-                &nbsp;&nbsp;
-                <i class="fa-brands fa-snapchat"></i>
-                &nbsp;&nbsp;
-                <i class="fa-brands fa-twitter"></i>
-                &nbsp;&nbsp;
-                <i class="fa-brands fa-github"></i>
+            <div class="form-logo">
+                <img src="logo-removebg-preview.png" alt="Logo">
             </div>
-        </div>
+            <div>
+                  <h2>Login</h2>
+                  <label for="username">Username</label>
+                  <input type="text" id="username" name="username" required>
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" required>
+                  <button type="button" onclick="login()">Login</button>
+                </form>
+              </div>
+              
+              <script>
+                function login() {
+                  var username = document.getElementById('username').value;
+                  var password = document.getElementById('password').value;
+              
+                  // Simulate authentication with hardcoded credentials
+                  if (username === 'admin' && password === 'admin') {
+                    window.location.href = 'admin.html';
+                  } else if (username === 'officer' && password === 'officer') {
+                    window.location.href = 'officer.hmtl';
+                  } else {
+                    alert('Invalid username or password. Please try again.');
+                  }
+                }
+              </script>
+             <br><br><br><br><br><br>
+             
         </form>
     </div>
 </body>

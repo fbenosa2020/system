@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Home</title>
 </head>
 <body>
@@ -22,17 +23,17 @@
             </ul>
         </nav>
     </header>
-    <section class="hero">
+  
+    <div class="hero">
         <div class="hero-content">
             <h1>Department Of Students Affairs</h1>
             <p>A brief description of your product or service goes here.</p>
             <a href="http://127.0.0.1:5500/Log%20in/login.html" class="cta-button">Get Started</a>
         </div>
-    </section>
-    <br>
+        </div   
+
    
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Modi facilis illum vero commodi maiores, labore quo libero doloribus iure facere ducimus debitis voluptas. Impedit sed deserunt corporis omnis, illum perferendis.</p>
+
          
             <!-- Add more slides as needed -->
             
@@ -41,19 +42,100 @@
     <script src="Home.js"></script>
    </div>
    <br>
-    <section id="pricing" class="pricing">
-        <h2>Features</h2>
-        <div class="price-option">
-            <h3>Title</h3>
-            <p>Sample</p>
-            <p>Sample</p>
-        </div>
-        <div class="price-option">
-            <h3>Features</h3>
-            <p>Title</p>
-            <p>Sample</p>
-        </div>
-    </section>
+   <br>
+   <br>
+
+   <div class="text"> 
+    HOLY CHID CENTRAL COLLEGES INC.
+   
+   </div>
+   <br>
+   <br>
+   <br>
+   <br>
+
+
+        <div class="testimonial-grid">
+            <div class="testimonial">
+              <img src="logo-removebg-preview.png" alt="Testimonial 1">
+              <p>Mission</p>
+              <p>"I had an amazing experience with this service. The team was professional and efficient."</p>
+             
+            </div>
+          
+            <div class="testimonial">
+              <img src="logo-removebg-preview.png" alt="Testimonial 2">
+              <p>Vission</p>
+              <p>"The product exceeded my expectations. I would highly recommend it to others."</p>
+          
+            </div>
+          
+            <div class="testimonial">
+              <img src="logo-removebg-preview.png" alt="Testimonial 3">
+              <p>Core Values</p>
+              <p>"Outstanding customer support! They went above and beyond to assist me."</p>
+              
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="text"> 
+            <p>NEWS EVENT</p>
+            </div>
+          <br>
+          <!---carusel section-->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="dsa1.jpg" alt="Image 1">
+                <p>Label 1</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="dsa2.jpg" alt="Image 2">
+                <p>Label 2</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="dsa3.jpg" alt="Image 3">
+                <p>Label 3</p>
+              </div>
+            </div>
+            </div>
+            <!-- Add Pagination -->
+          
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script>
+            var swiper = new Swiper('.swiper-container', {
+              slidesPerView: 1,
+              spaceBetween: 10,
+              loop: true,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              autoplay: {
+                delay: 3000, // Change slide every 3 seconds
+              },
+            });
+      
+          </script>
+<br>
+<br>
+<br>
+<div class="text"> 
+  <p>WHERE TO FIND US</p>
+  </div>
+  <br>
+  <br>
+  <br>
+
+          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=holy child central &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">embed code google maps</a></div>
+          <style>
+          .mapouter{position:relative;text-align:right;width:100%;height:400px;}
+          .gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}
+          .gmap_iframe {height:400px!important;}</style></div>
+
+   
+
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
         <p>Reach out to us.</p>

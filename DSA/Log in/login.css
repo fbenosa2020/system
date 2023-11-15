@@ -2,6 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-image: url(front\ bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
 }
 
 * Style the header and navigation */
@@ -16,7 +21,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     height: 55px;
-    background-color: black;
+    background-color: #0F2A3D;
 }
 
 .logo img {
@@ -61,60 +66,67 @@ header {
 .form-logo img {
     width: 80px; /* Adjust the size of the logo as needed */
     margin-bottom: 20px;
-   margin-top: -150%;
+   
 }
 
 .login-form {
-    background-color: #f2f2f2;
+    background-color: #0F2A3D;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px #040303;
+    box-shadow: 0px 0px 10px #f9f8f8;
     text-align: center;
-    height: 350px;
-    margin-top: -1%;
+    height: 450px;
+    margin-top: 4%;
+    width: 350px;
 }
 
 h2 {
     margin: 0;
     margin-bottom: 20px;
-    color: #333;
+    color: #FFA439;
 }
 
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
+    color: #FFA439;
 }
 
 input {
     width: 80%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #fcfcfc;
     border-radius: 3px;
 }
 
 button {
-    background-color: #333;
-    color: #fff;
+    background-color: #FFA439;
+    color: #000;
     border: none;
     padding: 10px 20px;
     border-radius: 3px;
     cursor: pointer;
     margin-top: px;
     text-decoration: none;
-    float: left;
-    margin-left: 7%;
-}
+    cursor: pointer;
+    margin-top: 20px; /* Adjust the top margin as needed */
+    text-decoration: none;
+    display: block; /* Change the display property to block */
+    margin-left: auto; /* Set left margin to auto */
+    margin-right: auto; /* Set right margin to auto */
+  }
+
 
 button:hover {
-    background-color: #555;
+    background-color: #719EBD;
 }
 
 .create{
     background-color: #333;
-    color: #fff;
+    color: #8b5b5b;
     border: none;
     padding: 10px 20px;
     border-radius: 3px;
@@ -123,19 +135,4 @@ button:hover {
     text-decoration: none;
     float: right;
     margin-right: 35px;
-}
-
-.create:hover {
-    background-color: #555;
-}
-.icon{
-     align-items: center;
-     padding: 10px 20px;
-     border-radius: 3px;
-     background-color: #1d1616eb;
-     color:white;
-     width: 50%;
-     margin-left: 20%;
-
-    
 }
