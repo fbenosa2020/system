@@ -8,53 +8,63 @@
     <title>Login Form with Navigation Bar</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="logo-removebg-preview.png" alt="Logo">
+   
+          </head>
+          <body>
+          <div class="wrapper">
+            <img src="logo-removebg-preview.png" alt="" width="50px">
+            <p>HOLY CHILD CENTRAL COLLEGES INC. <br> Logged In</p>
+            <form>
+              <input type="text" id="username" placeholder="Enter username">
+              <input type="password" id="password" placeholder="Password">
+              <button type="button" onclick="login()">Sign In</button>
+              <p class="recover">
+                <a href="#">Recover Password</a>
+              </p>
+            </form>
+          
+            <p class="or">
+              ----- or continue with -----
+            </p>
+            <div class="icons">
+              <a href="http://192.168.1.97:5500/HOME/home.html"><i class="fas fa-home"></i></a>
+              <i class="fab fa-github"></i>
+              <i class="fab fa-facebook"></i>
             </div>
-            <ul class="nav-links">
-                <li><a href="http://127.0.0.1:5500/HOME/home.html">Home</a></li>
-                <li><a href="#">Attendance</a></li>
-                <li><a href="https://www.facebook.com/groups/163081807048733">Contact</a></li>
-                <li><a href="http://192.168.1.97:5500/Log%20in/login.html">Log in</a></li>
-                <li><a href="#">View Event</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="login-container">
-        <form class="login-form">
-            <div class="form-logo">
-                <img src="logo-removebg-preview.png" alt="Logo">
+            <div class="not-member">
+              Not a member? <a href="#">Register Now</a>
             </div>
-            <div>
-                  <h2>Login</h2>
-                  <label for="username">Username</label>
-                  <input type="text" id="username" name="username" required>
-                  <label for="password">Password</label>
-                  <input type="password" id="password" name="password" required>
-                  <button type="button" onclick="login()">Login</button>
-                </form>
-              </div>
-              
-              <script>
-                function login() {
-                  var username = document.getElementById('username').value;
-                  var password = document.getElementById('password').value;
-              
-                  // Simulate authentication with hardcoded credentials
-                  if (username === 'admin' && password === 'admin') {
-                    window.location.href = 'admin.html';
-                  } else if (username === 'officer' && password === 'officer') {
-                    window.location.href = 'officer.hmtl';
-                  } else {
-                    alert('Invalid username or password. Please try again.');
-                  }
+          
+            <script>
+              function login() {
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+          
+                // Simulate authentication with hardcoded credentials
+                if (username === 'admin' && password === 'admin') {
+                  window.location.href = 'admin.html';
+                } else if (username === 'officer' && password === 'officer') {
+                  window.location.href = 'officer.html';
+                } else {
+                  alert('Invalid username or password. Please try again.');
                 }
-              </script>
-             <br><br><br><br><br><br>
-             
-        </form>
-    </div>
+              }
+            </script>
+          </div>
+          
+          </body>
+          </html>
+          
+              
+           
+            </form>
+          </div>
+          
+         
+            </div>
+          </div>
+        </body>
+        </html>
+        </span>
 </body>
 </html>

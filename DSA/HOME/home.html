@@ -1,158 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <title>Home</title>
-</head>
-<body>
+<span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DSA HOME</title>
+    <link rel="stylesheet" href="home.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="logo-removebg-preview.png" alt="Logo">
+      <div class="container">
+        <div class="nav_bar">
+          <div class="logo">
+            <img src="logo-removebg-preview.png" alt="" style="width: 50px;">
+            &nbsp;&nbsp;&nbsp;
+            <h4>HCCCI</h4>
+          </div>
+  
+            <div class="menu_list">
+              <a href="#">Home</a>
+              <a href="#">View Events</a>
+              <a href="#">View Attendance</a>
+              <a href="#">Services</a>
+              <a href="#">Contact US</a>
+  
+              <button class="lg_btn" a href="http://192.168.1.97:5500/Log%20in/login.html">Login</button></a>
             </div>
-            <ul class="nav-links">
-                <li><a href="http://127.0.0.1:5500/HOME/home.html">Home</a></li>
-                <li><a href="#">Attendance</a></li>
-                <li><a href="https://www.facebook.com/groups/163081807048733">Contact</a></li>
-                <li><a href="http://127.0.0.1:5500/Log%20in/login.html">Log in</a></li>
-                <li><a href="http://127.0.0.1:5500/List%20of%20Events/List.html">View Event</a></li>
-            </ul>
-        </nav>
+        </div>
+      </div>
     </header>
   
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Department Of Students Affairs</h1>
-            <p>A brief description of your product or service goes here.</p>
-            <a href="http://127.0.0.1:5500/Log%20in/login.html" class="cta-button">Get Started</a>
-        </div>
-        </div   
-
-   
-
-         
-            <!-- Add more slides as needed -->
-            
-        </div>
-    </div>
-    <script src="Home.js"></script>
-   </div>
-   <br>
-   <br>
-   <br>
-
-   <div class="text"> 
-    HOLY CHID CENTRAL COLLEGES INC.
-   
-   </div>
-   <br>
-   <br>
-   <br>
-   <br>
-
-
-        <div class="testimonial-grid">
-            <div class="testimonial">
-              <img src="logo-removebg-preview.png" alt="Testimonial 1">
-              <p>Mission</p>
-              <p>"I had an amazing experience with this service. The team was professional and efficient."</p>
-             
-            </div>
-          
-            <div class="testimonial">
-              <img src="logo-removebg-preview.png" alt="Testimonial 2">
-              <p>Vission</p>
-              <p>"The product exceeded my expectations. I would highly recommend it to others."</p>
-          
-            </div>
-          
-            <div class="testimonial">
-              <img src="logo-removebg-preview.png" alt="Testimonial 3">
-              <p>Core Values</p>
-              <p>"Outstanding customer support! They went above and beyond to assist me."</p>
-              
+    <section class="home_section">
+      <div class="overlay">
+        <div class="container">
+          <div class="home">
+            <img src="logo-removebg-preview.png" alt="" style="width: 100px;margin-top: 25px;">
+            <h1><span>Department</span> of <br>Students <span>Affairs</span> of <br><span>HCCCI</span><br></h1>
+            <div class="home_buttons">
+              <button class="btn1">Messages Us</button>
+              <button><i class="fas fa-play"></i>Video</button>
             </div>
           </div>
-          <br>
-          <br>
-          <div class="text"> 
-            <p>NEWS EVENT</p>
-            </div>
-          <br>
-          <!---carusel section-->
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="dsa1.jpg" alt="Image 1">
-                <p>Label 1</p>
-              </div>
-              <div class="swiper-slide">
-                <img src="dsa2.jpg" alt="Image 2">
-                <p>Label 2</p>
-              </div>
-              <div class="swiper-slide">
-                <img src="dsa3.jpg" alt="Image 3">
-                <p>Label 3</p>
-              </div>
-            </div>
-            </div>
-            <!-- Add Pagination -->
-          
-          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-          <script>
-            var swiper = new Swiper('.swiper-container', {
-              slidesPerView: 1,
-              spaceBetween: 10,
-              loop: true,
-              pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-              },
-              autoplay: {
-                delay: 3000, // Change slide every 3 seconds
-              },
-            });
-      
-          </script>
-<br>
-<br>
-<br>
-<div class="text"> 
-  <p>WHERE TO FIND US</p>
-  </div>
-  <br>
-  <br>
-  <br>
-
-          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=holy child central &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">embed code google maps</a></div>
-          <style>
-          .mapouter{position:relative;text-align:right;width:100%;height:400px;}
-          .gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}
-          .gmap_iframe {height:400px!important;}</style></div>
-
-   
-
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Reach out to us.</p>
-        <a href="mailto:your@email.com" class="cta-button">Email Us</a>
-        
-        <div class="icon">
-            <i class="fa-brands fa-facebook"></i>
-            &nbsp;&nbsp;
-            <i class="fa-brands fa-snapchat"></i>
-            &nbsp;&nbsp;
-            <i class="fa-brands fa-twitter"></i>
-            &nbsp;&nbsp;
-            <i class="fa-brands fa-instagram"></i>
         </div>
+      </div>
     </section>
-    <footer>
-        &copy; 2023 Your Company Name
-    </footer>
-</body>
-</html>
+  
+    <section class="services">
+      <div class="container">
+        <div class="title">
+          <h1><span>ABOUT</span> HCCCI  <span>DSA </span></h1>
+          <span class="slogan"></span>
+        </div>
+        <div class="services_boxes">
+          <div class="box">
+            <img src="logo-removebg-preview.png" alt="" style="width: 50px;">
+            <h4>Mission</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aspernatur.</p>
+          </div>
+  
+          <div class="box">
+            <img src="logo-removebg-preview.png" alt="" style="width: 50px;">
+            <h4>Vission</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aspernatur.</p>
+          </div>
+  
+          <div class="box">
+            <img src="logo-removebg-preview.png" alt="" style="width: 50px;">
+            <h4>Core Values</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aspernatur.</p>
+          </div>
+        </div>
+    </div>
+    </section>
+  </body>
+  <footer>
+    <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+</footer>
+  </html>
+  </span>

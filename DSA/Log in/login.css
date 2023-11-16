@@ -1,33 +1,28 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url(front\ bkg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
-* Style the header and navigation */
-header {
-    background-color: #333;
-    color: #fff;
-}   
+body{
+  background: #dfe9f5;
+}
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    height: 55px;
+    height: 60px;
     background-color: #0F2A3D;
 }
 
 .logo img {
     width: 60px; 
-    margin-left: 20px;
-    margin-top: 2%;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 35px;
 }
 
 .nav-links {
@@ -50,89 +45,93 @@ header {
 }
 
 .nav-links a:hover {
-    text-decoration: underline
-    
+    text-decoration: underline;
+     
 }
-.login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    
- 
+.wrapper{
+  width: 330px;
+  padding: 2rem 0 1rem 0;
+  margin: 50px auto;
+  background: #0F2A3D;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  color: #FFA439;
+  margin-top: 25px;
 }
-
-.form-logo img {
-    width: 80px; /* Adjust the size of the logo as needed */
-    margin-bottom: 20px;
-   
+h1{
+  font-size: 2rem;
+  color: #FFA439;
 }
-
-.login-form {
-    background-color: #0F2A3D;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px #f9f8f8;
-    text-align: center;
-    height: 450px;
-    margin-top: 4%;
-    width: 350px;
+p{
+  margin-bottom: 1.7rem;
 }
-
-h2 {
-    margin: 0;
-    margin-bottom: 20px;
-    color: #FFA439;
+form input{
+  width: 85%;
+  outline: none;
+  border: none;
+  background: #a9d1ee;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #FFA439;
+.recover{
+  text-align: right;
+  font-size: 0.8rem;
+  margin: 0.2rem 1.7rem 0 0;
 }
-
-input {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #fcfcfc;
-    border-radius: 3px;
+.recover a{
+  text-decoration: none;
+  color: #FFA439;
 }
-
-button {
-    background-color: #FFA439;
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-top: px;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 20px; /* Adjust the top margin as needed */
-    text-decoration: none;
-    display: block; /* Change the display property to block */
-    margin-left: auto; /* Set left margin to auto */
-    margin-right: auto; /* Set right margin to auto */
-  }
-
-
-button:hover {
-    background-color: #719EBD;
+button{
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  padding: 8px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 85%;
+  background: tomato;
+  color: #fff;
+  cursor: pointer;
 }
-
-.create{
-    background-color: #333;
-    color: #8b5b5b;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-top: -1px;
-    text-decoration: none;
-    float: right;
-    margin-right: 35px;
+button:hover{
+  background: rgba(122, 30, 30, 0.767);
+}
+.or{
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  color: #FFA439;
+}
+.icons i{
+  color: #07001f;
+  padding: 00.8rem 1.5rem;
+  border-radius: 10px;
+  margin-left: .9rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 2px solid #dfe9f5;
+}
+.icons i:hover{
+  color: #fff !important;
+  background: #07001f;
+  transition: 1s;
+}
+.icons i:first-child{
+  color: green;
+}
+.icons i:last-child{
+  color: blue;
+}
+.not-member{
+  font-size: 0.8rem;
+  margin-top: 1.4rem;
+}
+.not-member a{
+  color: tomato;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
 }

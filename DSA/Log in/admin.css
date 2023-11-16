@@ -42,6 +42,10 @@ nav{
   font-size: 18px;
   text-transform: uppercase;
 }
+.card:hover,
+button:hover {
+  transform: scale(1.05); /* Enlarge on hover */
+}
 a{
   position: relative;
   color: #FFA439;
@@ -88,6 +92,7 @@ a:hover{
   margin: 10px 30px;
   color: rgb(110, 109, 109);
   cursor: pointer;
+  transition: transform 0.3s ease; 
 }
 .main-skills{
   display: flex;
@@ -175,6 +180,7 @@ a:hover{
   border-radius: 10px;
   margin-top: 3rem;
   cursor: pointer;
+  transition: transform 0.3s ease; 
 }
 .box button:hover{
   background: rgba(0, 0, 0, 0.842);
